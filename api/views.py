@@ -10,4 +10,4 @@ class EmissionViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
     filterset_class = EmissionFilter
     ordering_fields = ['id', 'year', 'emissions', 'country', 'emission_type', 'activity']
-    ordering = ['id']  # Orden por defecto
+    ordering = ['id']

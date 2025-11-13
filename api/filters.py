@@ -5,7 +5,7 @@ class EmissionFilter(django_filters.FilterSet):
     class Meta:
         model = Emission
         fields = {
-            'year': ['exact'],
+            'year': ['exact', 'gt', 'lt', 'gte', 'lte'],
             'emissions': ['exact', 'gt', 'lt', 'gte', 'lte'],
             'emission_type': ['exact', 'icontains'],
             'country': ['exact', 'icontains'],
